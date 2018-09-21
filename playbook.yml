@@ -17,3 +17,10 @@
         owner: centos
         group: centos
         mode: 0644
+
+    - name: Ansible register variable basic example
+      shell: curl -4 ifconfig.co
+      register: output
+
+  - debug:
+      var: output
