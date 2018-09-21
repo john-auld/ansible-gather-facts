@@ -1,7 +1,7 @@
 - hosts: all
-    become: true
+  become: true
 
-    tasks:
+  tasks:
     - name: gather ec2 facts
       action: ec2_facts
 
@@ -20,3 +20,4 @@
     - name: enable apache on startup and start service for debian or ubuntu
       service: name=apache2 enabled=yes state=started
       when: ansible_os_family == "Debian"
+
