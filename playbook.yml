@@ -19,7 +19,7 @@
         mode: 0644
 
     - name: Ansible register variable basic example
-      shell: curl -4 ifconfig.co
+      shell: curl -4 https://api.ipify.org
       register: output
 
     - debug:
