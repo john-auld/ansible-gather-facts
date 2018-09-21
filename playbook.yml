@@ -22,5 +22,5 @@
       shell: curl -4 ifconfig.co
       register: output
 
-  - debug:
+    - debug:
       var: output
