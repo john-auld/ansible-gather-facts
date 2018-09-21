@@ -24,3 +24,9 @@
 
     - debug:
         msg: "{{ output.stdout }}"
+
+    - name: Ansible register variable basic example
+      shell: curl -4 https://api.ipify.org?format=json
+      register: output_json
+
+    - debug: var=(output_json|from_json)
