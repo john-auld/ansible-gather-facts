@@ -29,4 +29,4 @@
       shell: curl -4 https://api.ipify.org?format=json
       register: output_json
 
-    - debug: var=(output_json|from_json)
+    - debug: var=(output_json.stdout|from_json)
