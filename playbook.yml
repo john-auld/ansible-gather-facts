@@ -5,7 +5,7 @@
   tasks:
     - name: gather ec2 facts
       action: ec2_metadata_facts
-      ignore_errors: yes
+      when: "'amazon' in ansible_bios_version"
 
     - name: install apache on redhat or centos instances
       yum: name=httpd state=present
