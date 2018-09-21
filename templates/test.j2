@@ -3,3 +3,6 @@
 #
 
 test_var: {{ test_var }}
+
+eth0:
+  ipv4:  {{ ansible_eth0.ipv4.address }} 
