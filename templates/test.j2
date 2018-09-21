@@ -6,4 +6,4 @@ test_var: {{ test_var }}
 
 eth0:
   private_ipv4: {{ ansible_eth0.ipv4.address }}
-  public_ipv4:  {{ ansible_eth0.ipv4.network }}
+  ipv6_address: {{ ansible_eth0.ipv6.address }}
