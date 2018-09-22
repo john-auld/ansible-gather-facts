@@ -14,8 +14,8 @@
       template:
         src: templates/test.j2
         dest: /tmp/template_test
-        owner: centos
-        group: centos
+        owner: root
+        group: root
         mode: 0644
 
     - name: Ansible register variable basic example
